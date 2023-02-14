@@ -25,5 +25,20 @@ function firstPopup() {
         value: "view_all_departments",
       },
     ],
-  });
+  })
+  .then(res=>{
+    switch (res.question) {
+      case "view_all_departments":
+          viewAllDepartments();
+        break;
+    
+      default:
+        break;
+    }
+  })
+}
+
+function viewAllDepartments(){
+  // console.log('departments',connection.promise())
+  return connection.query("SELECT department.id,department.name FROM department")
 }
