@@ -1,12 +1,12 @@
-drop database if exists trackerDB;
+DROP DATABASE IF EXISTS trackerDB;
 
 CREATE DATABASE trackerDB;
+
 USE trackerDB;
 
-CREATE TABLE deparemtent(
-    id INT NOT NULL AUTO_INCREMENT,
-    name VARCHAR(30) NULL,
-    PRIMARY KEY (id)
+CREATE TABLE department (
+    id INT  AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(30) NOT NULL
 );
 CREATE TABLE role (
     id INT PRIMARY KEY AUTO_INCREMENT,
