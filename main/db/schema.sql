@@ -3,11 +3,11 @@ drop database if exists trackerDB;
 CREATE DATABASE trackerDB;
 USE trackerDB;
 
--- CREATE TABLE department (
---     id INT PRIMARY KEY,
---     name VARCHAR(30)
--- );
-
+CREATE TABLE deparemtent(
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(30) NULL,
+    PRIMARY KEY (id)
+);
 CREATE TABLE role (
     id INT PRIMARY KEY AUTO_INCREMENT,
     title VARCHAR(30) NOT NULL,
